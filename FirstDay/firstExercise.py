@@ -14,14 +14,11 @@ with open("GitHub/AdventOfCode__/FirstDay/input.txt", "r") as input:
         for char in line:
             if char in list_number:
                 number_word.append(int(char))
+#Selecting only the first and the last number
+        first_num = number_word[0]
+        last_num = number_word[len(number_word)-1]
 # Making operations to get the number the list represent
-        num = 0
-        dim = len(number_word) - 1
-        i = 0
-        while dim >= 0:
-            num += number_word[i] * 10 ** dim
-            i += 1
-            dim += -1
+        num = first_num * 10 + last_num
         numbers.append(num)
 
 # Sum of all numbers at the list
