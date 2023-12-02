@@ -23,3 +23,4 @@ with open("GitHub/AdventOfCode__/FirstDay/input.txt", "r") as input:
 
 # Sum of all numbers at the list
 print(sum(numbers))
+input.close()
